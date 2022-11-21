@@ -37,7 +37,6 @@ app.get('/oil',(req, res) => {
     })
 app.listen(process.env.PORT || 3021, () => {
     console.log('node is running App http://localhost:3021');
-    console.log('node is running App http://localhost:3021/oil');
 })
 
 module.exports = app;
