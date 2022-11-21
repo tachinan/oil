@@ -4,8 +4,10 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "start" : "react-scripts start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon main.js"
+  
   },
   "keywords": [],
   "author": "",
@@ -32,3 +34,4 @@
   },
   "homepage": "https://github.com/tachinan/oil#readme"
 }
+ 
