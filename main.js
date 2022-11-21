@@ -35,7 +35,7 @@ app.get('/oil',(req, res) => {
        return res.send({/*error: false, */data: results/*, message: message*/});
     })
     })
-app.listen(3021, () => {
+app.listen(process.env.PORT || 3021, () => {
     console.log('node is running App http://localhost:3021');
     console.log('node is running App http://localhost:3021/oil');
 })
