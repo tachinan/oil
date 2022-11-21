@@ -3,6 +3,8 @@ let app = express();
 let bodyParser = require('body-parser');
 let mysql = require('mysql');
 
+let PORT = process.env.PORT || 3021;
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
@@ -35,7 +37,7 @@ app.get('/oil',(req, res) => {
        return res.send({/*error: false, */data: results/*, message: message*/});
     })
     })
-app.listen(process.env.PORT || 3021, () => {
+app.listen(PORT, () => {
     console.log('node is running App http://localhost:3021');
 })
 
